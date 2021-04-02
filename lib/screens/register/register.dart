@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Login extends StatefulWidget {
+class Register extends StatefulWidget {
   @override
-  _LoginState createState() => _LoginState();
+  _RegisterState createState() => _RegisterState();
 }
 
-class _LoginState extends State<Login> {
-  bool obsureText = true;
-
+class _RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +14,7 @@ class _LoginState extends State<Login> {
         0xFFFFFFFF,
       ),
       body: SafeArea(
-        child: Column(
+        child: ListView(
           children: [
             SizedBox(
               height: 50,
@@ -33,7 +31,7 @@ class _LoginState extends State<Login> {
                     height: 100,
                   ),
                   Text(
-                    'Welcome Back',
+                    'Create Account',
                     textAlign: TextAlign.left,
                     style: GoogleFonts.manrope(
                       fontSize: 24,
@@ -47,7 +45,7 @@ class _LoginState extends State<Login> {
                     height: 30,
                   ),
                   Text(
-                    'Email',
+                    'Account Name',
                     style: GoogleFonts.manrope(
                       fontWeight: FontWeight.w500,
                       fontSize: 16,
@@ -95,7 +93,7 @@ class _LoginState extends State<Login> {
                   ),
                   SizedBox(height: 20),
                   Text(
-                    'Password',
+                    'Email',
                     style: GoogleFonts.manrope(
                       fontWeight: FontWeight.w500,
                       fontSize: 16,
@@ -108,31 +106,8 @@ class _LoginState extends State<Login> {
                     height: 10,
                   ),
                   TextFormField(
-                    obscureText: obsureText,
-                    keyboardType: TextInputType.name,
+                    keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
-                      suffixIcon: GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            if (obsureText = false) return obsureText = true;
-
-                            if (obsureText = true) return obsureText = false;
-                          });
-                        },
-                        child: obsureText
-                            ? Icon(
-                                Icons.visibility_outlined,
-                                color: Color(
-                                  0xFF464646,
-                                ),
-                              )
-                            : Icon(
-                                Icons.visibility_off_outlined,
-                                color: Color(
-                                  0xFF464646,
-                                ),
-                              ),
-                      ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(8),
                         borderSide: BorderSide(
@@ -156,44 +131,85 @@ class _LoginState extends State<Login> {
                           ),
                         ),
                       ),
+                      suffixIcon: Icon(
+                        Icons.check,
+                        color: Color(
+                          0xFF05944F,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 20),
+                  Text(
+                    'Password',
+                    style: GoogleFonts.manrope(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 16,
+                      color: Color(
+                        0xFF1B1B1B,
+                      ),
                     ),
                   ),
                   SizedBox(
-                    height: 50,
+                    height: 10,
                   ),
-                  Container(
-                    height: 50,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8),
-                      color: Color(
-                        0xFFFEBC52,
+                  TextFormField(
+                    keyboardType: TextInputType.name,
+                    decoration: InputDecoration(
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8),
+                        borderSide: BorderSide(
+                          color: Color(
+                            0xFFDEDEDE,
+                          ),
+                        ),
                       ),
-                    ),
-                    child: Center(
-                      child: Text(
-                        'Login',
-                        style: GoogleFonts.manrope(
-                          color: Color(0xFFFFFFFF),
-                          fontWeight: FontWeight.w500,
-                          fontSize: 16,
+                      labelStyle: GoogleFonts.manrope(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w400,
+                        color: Color(
+                          0xFF1B1B1B,
+                        ),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8),
+                        borderSide: BorderSide(
+                          color: Color(
+                            0xFFFEBC52,
+                          ),
+                        ),
+                      ),
+                      suffixIcon: Icon(
+                        Icons.visibility_outlined,
+                        color: Color(
+                          0xFF464646,
                         ),
                       ),
                     ),
                   ),
                   SizedBox(
-                    height: 20,
+                    height: 50,
                   ),
-                  Center(
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Forgot Password?',
-                        style: GoogleFonts.manrope(
-                          fontWeight: FontWeight.w700,
-                          fontSize: 14,
-                          color: Color(
-                            0xFFFEBC52,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/create_account');
+                    },
+                    child: Container(
+                      height: 50,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        color: Color(
+                          0xFFFEBC52,
+                        ),
+                      ),
+                      child: Center(
+                        child: Text(
+                          'Create',
+                          style: GoogleFonts.manrope(
+                            color: Color(0xFFFFFFFF),
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
                           ),
                         ),
                       ),

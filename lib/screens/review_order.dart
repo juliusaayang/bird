@@ -20,11 +20,12 @@ class _ReviewOrderState extends State<ReviewOrder> {
                 'Create Order',
                 textAlign: TextAlign.center,
                 style: GoogleFonts.manrope(
-                    color: Color.fromRGBO(255, 255, 255, 1),
-                    fontSize: 18,
-                    letterSpacing: 0,
-                    fontWeight: FontWeight.w600,
-                    height: 1),
+                  color: Color.fromRGBO(255, 255, 255, 1),
+                  fontSize: 18,
+                  letterSpacing: 0,
+                  fontWeight: FontWeight.w600,
+                  height: 1,
+                ),
               ),
             ),
             Padding(
@@ -511,10 +512,179 @@ class _ReviewOrderState extends State<ReviewOrder> {
                       ),
                       child: Row(
                         children: [
-                          Image(
-                            image: AssetImage('assets/box.png'),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 35.0),
+                            child: Image(
+                              image: AssetImage('assets/box.png'),
+                            ),
                           ),
+                          SizedBox(
+                            width: 15,
+                          ),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                'Customer Message',
+                                textAlign: TextAlign.left,
+                                style: GoogleFonts.manrope(
+                                  color: Color.fromRGBO(0, 0, 0, 1),
+                                  fontSize: 14,
+                                  letterSpacing: 0,
+                                  fontWeight: FontWeight.w700,
+                                  height: 1,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                'Document and toys \nplease be aware. thx',
+                                textAlign: TextAlign.left,
+                                style: GoogleFonts.manrope(
+                                    color: Color.fromRGBO(
+                                        0, 0, 0, 0.3499999940395355),
+                                    fontSize: 14,
+                                    letterSpacing: 0,
+                                    fontWeight: FontWeight.w400,
+                                    height: 1),
+                              ),
+                            ],
+                          )
                         ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 40,
+                    ),
+                    Divider(
+                      color: Color(
+                        0xFFE5E5E5,
+                      ),
+                      thickness: 2,
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      width: double.infinity,
+                      height: 101,
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(255, 255, 255, 1),
+                      ),
+                      child: Stack(children: <Widget>[
+                        Positioned(
+                            top: 2,
+                            left: 0,
+                            child: Text(
+                              'Delivery',
+                              textAlign: TextAlign.left,
+                              style: GoogleFonts.manrope(
+                                  color: Color.fromRGBO(70, 70, 70, 1),
+                                  fontSize: 14,
+                                  letterSpacing: 0,
+                                  fontWeight: FontWeight.normal,
+                                  height: 1),
+                            )),
+                        Positioned(
+                            top: 36,
+                            left: 0,
+                            child: Text(
+                              'Shipping Assurance',
+                              textAlign: TextAlign.left,
+                              style: GoogleFonts.manrope(
+                                  color: Color.fromRGBO(70, 70, 70, 1),
+                                  fontSize: 14,
+                                  letterSpacing: 0,
+                                  fontWeight: FontWeight.normal,
+                                  height: 1),
+                            )),
+                        Positioned(
+                            top: 68,
+                            left: 0,
+                            child: Container(
+                                width: 400,
+                                height: 33,
+                                decoration: BoxDecoration(
+                                  color: Color.fromRGBO(255, 255, 255, 1),
+                                ),
+                                child: Stack(children: <Widget>[
+                                  Positioned(
+                                      top: 7,
+                                      left: 0,
+                                      child: Text(
+                                        'Subtotal',
+                                        textAlign: TextAlign.left,
+                                        style: GoogleFonts.manrope(
+                                            color: Color.fromRGBO(0, 0, 0, 1),
+                                            fontSize: 14,
+                                            letterSpacing: 0,
+                                            fontWeight: FontWeight.w700,
+                                            height: 1),
+                                      )),
+                                  Positioned(
+                                      top: 0,
+                                      left: 263,
+                                      child: Text(
+                                        '₦1042.23',
+                                        textAlign: TextAlign.right,
+                                        style: GoogleFonts.manrope(
+                                            color: Color.fromRGBO(0, 0, 0, 1),
+                                            fontSize: 24,
+                                            letterSpacing: 0,
+                                            fontWeight: FontWeight.w700,
+                                            height: 1),
+                                      )),
+                                ]))),
+                        Positioned(
+                            top: 0,
+                            left: 298,
+                            child: Text(
+                              '₦1040.23',
+                              textAlign: TextAlign.right,
+                              style: GoogleFonts.manrope(
+                                  color: Color.fromRGBO(0, 0, 0, 1),
+                                  fontSize: 16,
+                                  letterSpacing: 0,
+                                  fontWeight: FontWeight.normal,
+                                  height: 1),
+                            )),
+                        Positioned(
+                            top: 34,
+                            left: 348,
+                            child: Text(
+                              '\$2',
+                              textAlign: TextAlign.right,
+                              style: GoogleFonts.manrope(
+                                  color: Color.fromRGBO(0, 0, 0, 1),
+                                  fontSize: 16,
+                                  letterSpacing: 0,
+                                  fontWeight: FontWeight.normal,
+                                  height: 1),
+                            )),
+                      ]),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      height: 50,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        color: Color(
+                          0xFFFEBC52,
+                        ),
+                      ),
+                      child: Center(
+                        child: Text(
+                          'Create Order',
+                          style: GoogleFonts.manrope(
+                            color: Color(0xFFFFFFFF),
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
+                          ),
+                        ),
                       ),
                     ),
                   ],
