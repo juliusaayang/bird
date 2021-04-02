@@ -248,48 +248,45 @@ class _RecipientState extends State<Recipient> {
                           height: 1),
                     ),
                     SizedBox(height: 10),
-                    Container(
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Color(
-                            0xFFDEDEDE,
+                    TextFormField(
+                      keyboardType: TextInputType.name,
+                      decoration: InputDecoration(
+                        hintText: 'Full Name',
+                        hintStyle: GoogleFonts.manrope(
+                            color: Color.fromRGBO(27, 27, 27, 1),
+                            fontSize: 16,
+                            letterSpacing: 0,
+                            fontWeight: FontWeight.normal,
+                            height: 1),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(8),
+                          borderSide: BorderSide(
+                            color: Color(
+                              0xFFDEDEDE,
+                            ),
                           ),
                         ),
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      padding: EdgeInsets.only(top: 10),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Container(
-                            height: 36,
-                            width: 230,
-                            color: Color(0xFFFFFFFF),
-                            child: TextField(
-                              decoration: InputDecoration(
-                                hintText: 'Full Name',
-                                hintStyle: GoogleFonts.manrope(
-                                  color: Color(0xFF1B1B1B),
-                                  fontWeight: FontWeight.w400,
-                                ),
-                                enabledBorder: InputBorder.none,
-                                focusedBorder: InputBorder.none,
-                              ),
+                        labelStyle: GoogleFonts.manrope(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                          color: Color(
+                            0xFF1B1B1B,
+                          ),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(8),
+                          borderSide: BorderSide(
+                            color: Color(
+                              0xFFFEBC52,
                             ),
                           ),
-                          SizedBox(
-                            width: 25,
+                        ),
+                        suffixIcon: Icon(
+                          Icons.check,
+                          color: Color(
+                            0xFF05944F,
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 10),
-                            child: Icon(
-                              Icons.check,
-                              color: Color(0xFF05944F),
-                              size: 25,
-                            ),
-                          ),
-                        ],
+                        ),
                       ),
                     ),
                     SizedBox(
@@ -306,42 +303,43 @@ class _RecipientState extends State<Recipient> {
                           height: 1),
                     ),
                     SizedBox(height: 10),
-                    Container(
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Color(
-                            0xFFDEDEDE,
+                    TextFormField(
+                      keyboardType: TextInputType.name,
+                      decoration: InputDecoration(
+                        hintText: 'Shipping Destination',
+                        hintStyle: GoogleFonts.manrope(
+                            color: Color.fromRGBO(27, 27, 27, 1),
+                            fontSize: 16,
+                            letterSpacing: 0,
+                            fontWeight: FontWeight.normal,
+                            height: 1),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(8),
+                          borderSide: BorderSide(
+                            color: Color(
+                              0xFFDEDEDE,
+                            ),
                           ),
                         ),
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      padding: EdgeInsets.only(top: 10),
-                      child: Padding(
-                        padding: const EdgeInsets.only(left: 20.0),
-                        child: Row(
-                          children: [
-                            Container(
-                              height: 36,
-                              width: 230,
-                              color: Color(0xFFFFFFFF),
-                              child: TextField(
-                                decoration: InputDecoration(
-                                  hintText: 'Shipping Destination',
-                                  hintStyle: GoogleFonts.manrope(
-                                    color: Color(0xFF1B1B1B),
-                                    fontWeight: FontWeight.w400,
-                                  ),
-                                  enabledBorder: InputBorder.none,
-                                  focusedBorder: InputBorder.none,
-                                ),
-                              ),
+                        labelStyle: GoogleFonts.manrope(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                          color: Color(
+                            0xFF1B1B1B,
+                          ),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(8),
+                          borderSide: BorderSide(
+                            color: Color(
+                              0xFFFEBC52,
                             ),
-                          ],
+                          ),
                         ),
                       ),
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 30,
                     ),
                     Text(
                       'Postal Zip',
@@ -354,42 +352,43 @@ class _RecipientState extends State<Recipient> {
                           height: 1),
                     ),
                     SizedBox(height: 10),
-                    Container(
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Color(
-                            0xFFDEDEDE,
+                    TextFormField(
+                      keyboardType: TextInputType.name,
+                      decoration: InputDecoration(
+                        hintText: 'XXXXX',
+                        hintStyle: GoogleFonts.manrope(
+                            color: Color.fromRGBO(27, 27, 27, 1),
+                            fontSize: 16,
+                            letterSpacing: 0,
+                            fontWeight: FontWeight.normal,
+                            height: 1),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(8),
+                          borderSide: BorderSide(
+                            color: Color(
+                              0xFFDEDEDE,
+                            ),
                           ),
                         ),
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      padding: EdgeInsets.only(top: 10),
-                      child: Padding(
-                        padding: const EdgeInsets.only(left: 20.0),
-                        child: Row(
-                          children: [
-                            Container(
-                              height: 36,
-                              width: 230,
-                              color: Color(0xFFFFFFFF),
-                              child: TextField(
-                                decoration: InputDecoration(
-                                  hintText: 'XXXXX',
-                                  hintStyle: GoogleFonts.manrope(
-                                    color: Color(0xFF1B1B1B),
-                                    fontWeight: FontWeight.w400,
-                                  ),
-                                  enabledBorder: InputBorder.none,
-                                  focusedBorder: InputBorder.none,
-                                ),
-                              ),
+                        labelStyle: GoogleFonts.manrope(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                          color: Color(
+                            0xFF1B1B1B,
+                          ),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(8),
+                          borderSide: BorderSide(
+                            color: Color(
+                              0xFFFEBC52,
                             ),
-                          ],
+                          ),
                         ),
                       ),
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 30,
                     ),
                     Text(
                       'Phone Number',
@@ -402,124 +401,85 @@ class _RecipientState extends State<Recipient> {
                           height: 1),
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 10,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Container(
-                          width: 91,
-                          height: 46,
-                          child: Stack(
-                            children: <Widget>[
-                              Positioned(
-                                  top: 0,
-                                  left: 0,
-                                  child: Container(
-                                      width: 91,
-                                      height: 46,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.only(
-                                          topLeft: Radius.circular(8),
-                                          topRight: Radius.circular(8),
-                                          bottomLeft: Radius.circular(8),
-                                          bottomRight: Radius.circular(8),
-                                        ),
-                                        color: Color.fromRGBO(255, 255, 255,
-                                            0.00009999999747378752),
-                                        border: Border.all(
-                                          color:
-                                              Color.fromRGBO(222, 222, 222, 1),
-                                          width: 1,
-                                        ),
-                                      ))),
-                              Positioned(
-                                  top: 12,
-                                  left: 16,
-                                  child: //Mask holder Template
-                                      Container(
-                                    width: 39,
-                                    height: 22,
-                                    child: Image(
-                                      image: AssetImage(
-                                        'assets/Image2.png',
-                                      ),
-                                    ),
-                                  )),
-                              Positioned(
-                                top: 20,
-                                left: 62,
-                                child: //Mask holder Template
-                                    Container(
-                                  width: 10,
-                                  height: 6,
-                                  child: Icon(
-                                    Icons.arrow_drop_down_outlined,
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Color(
+                                0xFFDEDEDE,
+                              ),
+                            ),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          width: 92,
+                          height: 60,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(
+                                  left: 5,
+                                ),
+                                child: Image(
+                                  width: 42,
+                                  height: 26,
+                                  image: AssetImage(
+                                    'assets/Image2.png',
                                   ),
                                 ),
+                              ),
+                              SizedBox(
+                                width: 2,
+                              ),
+                              Icon(
+                                Icons.arrow_drop_down,
                               ),
                             ],
                           ),
                         ),
-                        SizedBox(
-                          width: 15,
-                        ),
                         Container(
-                            width: 236,
-                            height: 46,
-                            decoration: BoxDecoration(
-                              color: Color.fromRGBO(255, 255, 255, 1),
-                            ),
-                            child: Stack(children: <Widget>[
-                              Positioned(
-                                  top: 0,
-                                  left: 0,
-                                  child: Container(
-                                      width: 236,
-                                      height: 46,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.only(
-                                          topLeft: Radius.circular(8),
-                                          topRight: Radius.circular(8),
-                                          bottomLeft: Radius.circular(8),
-                                          bottomRight: Radius.circular(8),
-                                        ),
-                                        color: Color.fromRGBO(255, 255, 255,
-                                            0.00009999999747378752),
-                                        border: Border.all(
-                                          color:
-                                              Color.fromRGBO(222, 222, 222, 1),
-                                          width: 1,
-                                        ),
-                                      ))),
-                              Positioned(
-                                  top: 12,
-                                  left: 16,
-                                  child: Text(
-                                    '+234',
-                                    textAlign: TextAlign.left,
-                                    style: GoogleFonts.manrope(
-                                        color: Color.fromRGBO(27, 27, 27, 1),
-                                        fontSize: 16,
-                                        letterSpacing: 0,
-                                        fontWeight: FontWeight.normal,
-                                        height: 1),
-                                  )),
-                              Positioned(
-                                top: 12,
-                                left: 36,
-                                child: Text(
-                                  '         81-4567-535',
-                                  textAlign: TextAlign.left,
-                                  style: GoogleFonts.manrope(
-                                      color: Color.fromRGBO(27, 27, 27, 1),
-                                      fontSize: 16,
-                                      letterSpacing: 0,
-                                      fontWeight: FontWeight.normal,
-                                      height: 1),
+                          width: 236,
+                          child: TextFormField(
+                            keyboardType: TextInputType.phone,
+                            decoration: InputDecoration(
+                              enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(8),
+                                borderSide: BorderSide(
+                                  color: Color(
+                                    0xFFDEDEDE,
+                                  ),
                                 ),
                               ),
-                            ]))
+                              prefixText: '+234   ',
+                              prefixStyle: GoogleFonts.manrope(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w400,
+                                color: Color(
+                                  0xFF1B1B1B,
+                                ),
+                              ),
+                              labelStyle: GoogleFonts.manrope(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w400,
+                                color: Color(
+                                  0xFF1B1B1B,
+                                ),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(8),
+                                borderSide: BorderSide(
+                                  color: Color(
+                                    0xFFFEBC52,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ],
@@ -533,11 +493,12 @@ class _RecipientState extends State<Recipient> {
                   ),
                   boxShadow: [
                     BoxShadow(
-                        color: Color.fromRGBO(0, 0, 0, 0.07999999821186066),
-                        offset: Offset(0, 18),
-                        blurRadius: 40)
+                      color: Color.fromRGBO(0, 0, 0, 0.07999999821186066),
+                      offset: Offset(0, 18),
+                      blurRadius: 40,
+                    ),
                   ],
-                  color: Color.fromRGBO(250, 250, 250, 1),
+                  color: Color.fromRGBO(255, 255, 255, 1),
                 ),
               ),
             ),

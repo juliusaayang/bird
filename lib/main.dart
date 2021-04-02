@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Register(),
+      home: ReviewOrder(),
       routes: {
         '/create_account': (context) => CreateAccount(),
         '/create_account_2': (context) => CreateAccount2(),

@@ -702,9 +702,7 @@ class _ReviewOrderState extends State<ReviewOrder> {
                         offset: Offset(0, 18),
                         blurRadius: 40)
                   ],
-                  color: Color(
-                    0xFFFFFFFF,
-                  ),
+                  color: Color.fromRGBO(255, 255, 255, 1),
                 ),
               ),
             ),
