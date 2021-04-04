@@ -16,7 +16,7 @@ class _LoginState extends State<Login> {
         0xFFFFFFFF,
       ),
       body: SafeArea(
-        child: Column(
+        child: ListView(
           children: [
             SizedBox(
               height: 50,
