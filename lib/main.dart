@@ -39,6 +39,7 @@ class MyApp extends StatelessWidget {
         '/recipient_detail': (context) => RecipientDetail(),
         '/sender-create_order': (context) => SenderCreateOrder(),
         '/sender-recipient_order': (context) => SenderRecipientDetail(),
+        
       },
     );
   }
